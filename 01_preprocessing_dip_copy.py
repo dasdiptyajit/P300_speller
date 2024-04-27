@@ -132,7 +132,7 @@ if __name__ == '__main__':
             # eeg channel data
             ch_data = mat_head['y']
             # extract events
-            events =  mat_head['trig']
+            trigger =  mat_head['trig']
 
             # create a structure for mne
             ch_names = ['Fz', 'Cz', 'P3', 'Pz', 'P4', 'PO7', 'Oz','PO8']
@@ -146,15 +146,55 @@ if __name__ == '__main__':
 
             # apply a filter [fl_low, fl_high = 1., 30.]
             eeg_raw_filt = eeg_raw.copy(). filter(fl_low, fl_high, fir_design='firwin')
+            times = eeg_raw_filt.times *1000   # in ms
+
+            # trigger ids (target is 1, non target is -1)
+            trg_id = 1
+            non_trg_id = -1
+
+            # extract events
+            t_target = []
+            t_nontarget = []
+
+            prev_trigger = 0  # Initialize previous trigger value
+            for i in range(len(trigger)):
+                if trigger[i] == 1 and prev_trigger == 0:  # Rising edge for targets
+                    t_target.append(times[i]/sfreq)
+                elif trigger[i] == -1 and prev_trigger == 0:  # Rising edge for non-targets
+                    t_nontarget.append(times[i]/sfreq)
+                prev_trigger = trigger[i]  # Update previous trigger value
+
+            print("Time points for targets:", t_target)
+            print("Time points for non-targets:", t_nontarget)
+
+            # create events according to MNE structure
+            target_events = np.zeros((len(t_target), 3))
+            non_target_events = np.zeros((len(t_nontarget), 3))
+
+            for i in range(len(t_target)):
+                target_events[i][0] = t_target[i]
+                target_events[i][2] = trg_id
+
+            for i in range(len(t_nontarget)):
+                non_target_events[i][0] = t_nontarget[i]
+                non_target_events[i][2] = non_trg_id
+
+            # merge all events
+            events = np.concatenate((non_target_events, target_events), axis=0)
+
+            # add the events to raw object
+            mapping = {1: "target", -1: "non-target"}
+            annot_from_events = mne.annotations_from_events(
+                events=events,
+                event_desc=mapping,
+                sfreq=eeg_raw_filt.info["sfreq"])
+            eeg_raw_filt.set_annotations(annot_from_events)
 
             # plot raw
             eeg_raw_filt.plot(scalings='auto', title='eeg raw data', block=True)
 
-            # extract events
-            events = mne.find_events(eeg_raw_filt, shortest_event=0, stim_channel=None)
-
             # plot the sensor configuration to check if it's correct
-            fig = eeg_raw.plot_sensors(ch_type='eeg', show_names=True, show=False)
+            fig = eeg_raw_filt.plot_sensors(ch_type='eeg', show_names=True, show=False)
             fig.set_size_inches(16, 12)  # set the size of the figure
             fig_out = join(result_folder, '%s-montage.png' % id)
             plt.savefig(fig_out, format='png', dpi=400)
@@ -162,9 +202,9 @@ if __name__ == '__main__':
             # make a figure for events
             event_dict = {'target': 1, 'non_target': -1}
             fig = mne.viz.plot_events(events, sfreq=eeg_raw.info['sfreq'],
-                                      first_samp=eeg_raw.first_samp, event_id=event_dict, show=False)
+                                      first_samp=eeg_raw_filt.first_samp, event_id=event_dict, show=False)
             fig.subplots_adjust(right=0.7)  # make room for legend
             fig.set_size_inches(20, 9)  # set the size of the figure
-            fig_out = join(result_folder, '%s-events-%s.png' % (id, seg))
+            fig_out = join(result_folder, '%s-events.png' % id)
             plt.savefig(fig_out, format='png', dpi=400)
 

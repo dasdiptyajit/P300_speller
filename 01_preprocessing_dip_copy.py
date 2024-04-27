@@ -159,9 +159,9 @@ if __name__ == '__main__':
             prev_trigger = 0  # Initialize previous trigger value
             for i in range(len(trigger)):
                 if trigger[i] == 1 and prev_trigger == 0:  # Rising edge for targets
-                    t_target.append(times[i]/sfreq)
+                    t_target.append(times[i])
                 elif trigger[i] == -1 and prev_trigger == 0:  # Rising edge for non-targets
-                    t_nontarget.append(times[i]/sfreq)
+                    t_nontarget.append(times[i])
                 prev_trigger = trigger[i]  # Update previous trigger value
 
             print("Time points for targets:", t_target)

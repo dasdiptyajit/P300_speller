@@ -80,9 +80,9 @@ Preprocessing steps of EEG data:
 
 ## Results 💡
 
-- ** subject: S1
-Accuracy: 0.985239852398524
-Classification Report:
+- subject: S1
+- Accuracy: 0.985239852398524
+- Classification Report:
 
 |            | precision | recall | f1-score | support |
 |------------|-----------|--------|----------|---------|
@@ -90,9 +90,9 @@ Classification Report:
 |   target   |    0.97   |  1.00  |   0.99   |   136   |
 
 
-subject: S2
-Accuracy: 0.9880952380952381
-Classification Report:
+- subject: S2
+- Accuracy: 0.9880952380952381
+- Classification Report:
 
 |            | precision | recall | f1-score | support |
 |------------|-----------|--------|----------|---------|
@@ -100,9 +100,9 @@ Classification Report:
 |   target   |    0.98   |  1.00  |   0.99   |   209   |
 
 
-subject: S3
-Accuracy: 0.9885714285714285
-Classification Report:
+- subject: S3
+- Accuracy: 0.9885714285714285
+- Classification Report:
 
 |            | precision | recall | f1-score | support |
 |------------|-----------|--------|----------|---------|
@@ -110,9 +110,9 @@ Classification Report:
 |   target   |    0.99   |  0.98  |   0.99   |   183   |
 
 
-subject: S4
-Accuracy: 0.9880952380952381
-Classification Report:
+- subject: S4
+- Accuracy: 0.9880952380952381
+- Classification Report:
 
 |            | precision | recall | f1-score | support |
 |------------|-----------|--------|----------|---------|
@@ -120,9 +120,9 @@ Classification Report:
 |   target   |    0.99   |  0.99  |   0.99   |   216   |
 
 
-subject: S5
-Accuracy: 0.9883720930232558
-Classification Report:
+- subject: S5
+- Accuracy: 0.9883720930232558
+- Classification Report:
 
 |            | precision | recall | f1-score | support |
 |------------|-----------|--------|----------|---------|

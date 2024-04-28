@@ -60,6 +60,18 @@ Each `.mat` file contains EEG data related to experiments with P300 spellers. Co
 
 ## Pipeline
 
+# EEG processing workflow using [MNE-Python](https://mne.tools/stable/index.html)
+
+```mermaid
+graph LR;
+a[Raw EEG data] --eeg montage, average reference, filtering--> b[Epochs] --reject epochs --> c[Cleaned Epochs] 
+
+```
+Preprocessing steps of EEG data:
+1. Load EEG data from .mat file, 8 electrodes and montage creation, MNE raw object conversion, Set reference to common average.  
+2. Data filtering (1., 30. Hz), Epochs creation, drop bad epochs using global reject threshold, plot evoked data for data quality control. 
+
+
 
 
 

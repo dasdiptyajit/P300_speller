@@ -81,53 +81,53 @@ Preprocessing steps of EEG data:
 ## Results 💡
 
 - subject: S1
-- Accuracy: 0.985239852398524
+- Accuracy: 98.52%
 - Classification Report:
 
-|            | precision | recall | f1-score | support |
+|            | precision % | recall % | f1-score%  | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    1.00   |  0.97  |   0.98   |   135   |
-|   target   |    0.97   |  1.00  |   0.99   |   136   |
+| non-target |    100   |  97  |   98   |   135   |
+|   target   |    97   |  100  |   99   |   136   |
 
 
 - subject: S2
-- Accuracy: 0.9880952380952381
+- Accuracy: 98.81%
 - Classification Report:
 
-|            | precision | recall | f1-score | support |
+|            | precision % | recall % | f1-score % | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    1.00   |  0.98  |   0.99   |   211   |
-|   target   |    0.98   |  1.00  |   0.99   |   209   |
+| non-target |    100   |  98  |   99   |   211   |
+|   target   |    98   |  100  |   99   |   209   |
 
 
 - subject: S3
-- Accuracy: 0.9885714285714285
+- Accuracy: 98.86%
 - Classification Report:
 
-|            | precision | recall | f1-score | support |
+|            | precision % | recall % | f1-score %| support |
 |------------|-----------|--------|----------|---------|
-| non-target |    0.98   |  0.99  |   0.99   |   167   |
-|   target   |    0.99   |  0.98  |   0.99   |   183   |
+| non-target |    98   |  99  |   99   |   167   |
+|   target   |    99   |  98  |   99   |   183   |
 
 
 - subject: S4
-- Accuracy: 0.9880952380952381
+- Accuracy: 98.81%
 - Classification Report:
 
-|            | precision | recall | f1-score | support |
+|            | precision % | recall %| f1-score % | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    0.99   |  0.99  |   0.99   |   204   |
-|   target   |    0.99   |  0.99  |   0.99   |   216   |
+| non-target |    99   |  99  |   99   |   204   |
+|   target   |    99   |  99  |   99   |   216   |
 
 
 - subject: S5
-- Accuracy: 0.9883720930232558
+- Accuracy: 98.84%
 - Classification Report:
 
-|            | precision | recall | f1-score | support |
+|            | precision %| recall % | f1-score % | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    1.00   |  0.98  |   0.99   |   187   |
-|   target   |    0.98   |  1.00  |   0.99   |   157   |
+| non-target |    100   |  98  |   99   |   187   |
+|   target   |    98   |  100  |   99   |   157   |
 
 
 

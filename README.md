@@ -80,7 +80,7 @@ Preprocessing steps of EEG data:
 
 ## Results 💡
 
-subject: S1
+- ** subject: S1
 Accuracy: 0.985239852398524
 Classification Report:
 

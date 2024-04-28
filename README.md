@@ -6,7 +6,7 @@ Introducing the P300 Speller Code Repository, born from the dynamic energy of th
 ## Meet Our Dynamic Team 💫
 
 🌟 **Diptyajit Das**  [*contact*](mailto:bmedasdiptyajit@gmail.com) 
-🌟 **Bhawna Kapoor** 
+🌟 **Bhawna Kapoor**  [*contact*](mailto:bhawnakapoor2001@gmail.com)
 🌟 **Tanaya Das**    [*contact*](mailto:tanaya12das@gmail.com)
 🌟 **Zahra Maleki** 
 🌟 **Puneet Tomar**  [*contact*](mailto:tomarp@pm.me)

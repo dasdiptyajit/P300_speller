@@ -1,14 +1,17 @@
-## P300 speller Code Repository
+# P300 speller Code Repository
 
 Introducing the P300 Speller Code Repository, born from the dynamic energy of the BCI Spring Hackathon on April 27, 2024. Here lies the digital archive of innovation, a testament to the collaborative showcased at the Hackathon 2024 Spring School. 
 
 **Team:** 
+> Diptyajit Das  
+> Bhawna Kapoor  
+> Tanaya Das  
+> Zahra Maleki  
 > Puneet Tomar [tomarp@pm.me](mailto:tomarp@pm.me)  
-> Add Names
 
 
 
-### Literature
+## Literature
 1. **Overview.pdf**
    - Catalog-like overview of datasets.
    - Brief mentions of experimental setup per dataset.
@@ -18,13 +21,13 @@ Introducing the P300 Speller Code Repository, born from the dynamic energy of th
    - Comparison of dry and wet electrode performances.
    - Demonstrates significant improvements in training efficiency and accuracy with TVLDA.
 
-### Data File Summaries
+## EEG Data Files
 Each `.mat` file contains EEG data related to experiments with P300 spellers. Common variables include:
 - **Sampling Rate (fs)**: Data captured at a specific frequency in Hz.
 - **EEG Data (y)**: Matrix of EEG readings across different channels and samples.
 - **Triggers (trig)**: Event markers indicating target vs. nontarget stimuli.
 
-### Statistics for EEG Data Files
+### Statistics
 
 | Subject | Mean of EEG | SD of EEG | Max of EEG | Min of EEG | Mean of Triggers | SD of Triggers | 
 |------|-------------|----------------|------------|------------|------------------|---------------------|

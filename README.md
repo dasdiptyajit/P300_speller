@@ -8,6 +8,10 @@ Introducing the P300 Speller Code Repository, born from the dynamic energy of th
 > Tanaya Das  
 > Zahra Maleki  
 > Puneet Tomar [tomarp@pm.me](mailto:tomarp@pm.me)  
+<<<<<<< HEAD
+=======
+> Diptyajit Das <bmedasdiptyajit@gmail.com>
+>>>>>>> 6c38dc5e61730c9bd59a7ae7c7d347f0d9e56566
 
 
 

@@ -8,7 +8,7 @@ Introducing the P300 Speller Code Repository, born from the dynamic energy of th
 🌟 **Diptyajit Das**  [*contact*](mailto:bmedasdiptyajit@gmail.com) 
 🌟 **Bhawna Kapoor**  [*contact*](mailto:bhawnakapoor2001@gmail.com)
 🌟 **Tanaya Das**    [*contact*](mailto:tanaya12das@gmail.com)
-🌟 **Zahra Maleki** 
+🌟 **Zahra Maleki**  
 🌟 **Puneet Tomar**  [*contact*](mailto:tomarp@pm.me)
 ___
 

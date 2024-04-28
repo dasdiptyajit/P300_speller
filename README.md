@@ -76,7 +76,6 @@ Preprocessing steps of EEG data:
 
 
 flowchart TD
-
     subgraph Part I
     A(Load EEG Data) --> B(Preprocess EEG Data)
     B --> C(Manual Event Creation)
@@ -94,7 +93,6 @@ flowchart TD
 
     B -.-> I
     H --> I
-
 graph TD;
     A[Load EEG Data] --> B[Preprocess EEG Data];
     B --> C[Manual Event Creation];
@@ -106,6 +104,7 @@ graph TD;
     H --> I[Calculate PSD Features];
     I --> J[Prepare Data for Machine Learning];
     J --> K[Machine Learning Modeling];
+
 
 
 

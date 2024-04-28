@@ -1,4 +1,4 @@
-Part I
+# Part I
 
 ## EEG Data Handling and Preprocessing
 1. **Load EEG Data**: The `load_data` function reads EEG data from a MATLAB file (`.mat`). It extracts the sampling frequency (`fs`), EEG signals (`y`), and trigger signals (`trig`).

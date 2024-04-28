@@ -8,13 +8,7 @@ Introducing the P300 Speller Code Repository, born from the dynamic energy of th
 
 
 
-### Data File Summaries
-Each `.mat` file contains EEG data related to experiments with P300 spellers. Common variables include:
-- **Sampling Rate (fs)**: Data captured at a specific frequency in Hz.
-- **EEG Data (y)**: Matrix of EEG readings across different channels and samples.
-- **Triggers (trig)**: Event markers indicating target vs. nontarget stimuli.
-
-### PDF Summaries
+### Literature
 1. **Overview.pdf**
    - Catalog-like overview of datasets.
    - Brief mentions of experimental setup per dataset.
@@ -24,7 +18,11 @@ Each `.mat` file contains EEG data related to experiments with P300 spellers. Co
    - Comparison of dry and wet electrode performances.
    - Demonstrates significant improvements in training efficiency and accuracy with TVLDA.
 
-
+### Data File Summaries
+Each `.mat` file contains EEG data related to experiments with P300 spellers. Common variables include:
+- **Sampling Rate (fs)**: Data captured at a specific frequency in Hz.
+- **EEG Data (y)**: Matrix of EEG readings across different channels and samples.
+- **Triggers (trig)**: Event markers indicating target vs. nontarget stimuli.
 
 ### Statistics for EEG Data Files
 
@@ -48,8 +46,8 @@ Each `.mat` file contains EEG data related to experiments with P300 spellers. Co
 
 ### Dimensions of Data in Each File
 
-| File | EEG Data Shape (samples x channels) | Length of Triggers |
-|------|-------------------------------------|--------------------|
+| Subject | Data Shape (samples x channels) | Length of Triggers |
+|------|:-------------------------------------:|:--------------------:|
 | S1   | 60871 x 8                           | 60871              |
 | S2   | 60806 x 8                           | 60806              |
 | S3   | 60955 x 8                           | 60955              |

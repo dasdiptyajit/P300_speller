@@ -4,7 +4,7 @@ Introducing the P300 Speller Code Repository, born from the dynamic energy of th
 
 **Team:** 
 > Puneet Tomar [tomarp@pm.me](mailto:tomarp@pm.me)  
-> Add Names
+> Diptyajit Das 
 
 
 

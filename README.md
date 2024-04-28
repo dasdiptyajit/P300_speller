@@ -88,7 +88,7 @@ Preprocessing steps of EEG data:
 |            | precision % | recall % | f1-score%  | support |
 |------------|-----------|--------|----------|---------|
 | non-target |    100   |  97  |   98   |   135   |
-|   target   |    97   |  100  |   99   |   136   |
+|   target   |    96   |  100  |   98   |   136   |
 
 
 - subject: S2
@@ -97,8 +97,8 @@ Preprocessing steps of EEG data:
 
 |            | precision % | recall % | f1-score % | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    100   |  98  |   99   |   211   |
-|   target   |    98   |  100  |   99   |   209   |
+| non-target |    98   |  99  |   98   |   211   |
+|   target   |    99   |  98  |   99   |   209   |
 
 
 - subject: S3
@@ -107,8 +107,8 @@ Preprocessing steps of EEG data:
 
 |            | precision % | recall % | f1-score %| support |
 |------------|-----------|--------|----------|---------|
-| non-target |    98   |  99  |   99   |   167   |
-|   target   |    99   |  98  |   99   |   183   |
+| non-target |    100   |  100  |   100   |   167   |
+|   target   |    100   |  100  |   100   |   183   |
 
 
 - subject: S4
@@ -117,8 +117,8 @@ Preprocessing steps of EEG data:
 
 |            | precision % | recall %| f1-score % | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    99   |  99  |   99   |   204   |
-|   target   |    99   |  99  |   99   |   216   |
+| non-target |    100   |  99  |   99   |   204   |
+|   target   |    100   |  100  |   99   |   216   |
 
 
 - subject: S5
@@ -127,8 +127,8 @@ Preprocessing steps of EEG data:
 
 |            | precision %| recall % | f1-score % | support |
 |------------|-----------|--------|----------|---------|
-| non-target |    100   |  98  |   99   |   187   |
-|   target   |    98   |  100  |   99   |   157   |
+| non-target |    97   |  99  |   98   |   187   |
+|   target   |    99   |  97  |   98   |   157   |
 
 
 

@@ -80,20 +80,25 @@ Preprocessing steps of EEG data:
 
 ## Results 💡
 
-Classifier results
 subject: S1
+
 Accuracy: 0.985239852398524
+
 Classification Report:
-               precision    recall  f1-score   support
 
-  non-target       1.00      0.97      0.98       135
-      target       0.97      1.00      0.99       136
+|            | precision | recall | f1-score | support |
+|------------|-----------|--------|----------|---------|
+| non-target |    1.00   |  0.97  |   0.98   |   135   |
+|   target   |    0.97   |  1.00  |   0.99   |   136   |
 
-    accuracy                           0.99       271
-   macro avg       0.99      0.99      0.99       271
-weighted avg       0.99      0.99      0.99       271
+accuracy: 0.99     support: 271
 
------------------------------------------
+|     | precision | recall | f1-score | support |
+|-----|-----------|--------|----------|---------|
+| avg |    0.99   |  0.99  |   0.99   |   271   |
+
+
+
 Classifier results
 subject: S2
 Accuracy: 0.9880952380952381

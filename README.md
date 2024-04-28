@@ -75,35 +75,6 @@ Preprocessing steps of EEG data:
 2. Data filtering (1., 30. Hz), Epochs creation, drop bad epochs using global reject threshold, plot evoked data for data quality control. 
 
 
-flowchart TD
-    subgraph Part I
-    A(Load EEG Data) --> B(Preprocess EEG Data)
-    B --> C(Manual Event Creation)
-    C --> D(Visualize Trigger Data)
-    D --> E(Epoch Creation)
-    E --> F(Artifact Rejection)
-    F --> G(ERP Calculation and Plotting)
-    E --> H(PSD Calculation)
-    end
-
-    subgraph Part II
-    I(Calculate PSD Features) --> J(Prepare Data for Machine Learning)
-    J --> K(Machine Learning Modeling)
-    end
-
-    B -.-> I
-    H --> I
-graph TD;
-    A[Load EEG Data] --> B[Preprocess EEG Data];
-    B --> C[Manual Event Creation];
-    C --> D[Visualize Trigger Data];
-    D --> E[Epoch Creation];
-    E --> F[Artifact Rejection];
-    F --> G[ERP Calculation and Plotting];
-    E --> H[PSD Calculation];
-    H --> I[Calculate PSD Features];
-    I --> J[Prepare Data for Machine Learning];
-    J --> K[Machine Learning Modeling];
 
 
 

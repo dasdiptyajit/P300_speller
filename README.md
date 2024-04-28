@@ -3,7 +3,7 @@
 Introducing the P300 Speller Code Repository, born from the dynamic energy of the BCI Spring Hackathon on April 27, 2024. Here lies the digital archive of innovation, a testament to the collaborative showcased at the Hackathon 2024 Spring School. 
 
 **Team:** 
-> <<<<<< HEAD Puneet Tomar [tomarp@pm.me](mailto:tomarp@pm.me) >>>>>> 
+> Puneet Tomar [tomarp@pm.me](mailto:tomarp@pm.me)
 > Diptyajit Das <bmedasdiptyajit@gmail.com > 
 > Bhawna Kapoor  
 > Tanaya Das  

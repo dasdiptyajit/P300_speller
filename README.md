@@ -80,3 +80,74 @@ Preprocessing steps of EEG data:
 
 ## Results 💡
 
+Classifier results
+subject: S1
+Accuracy: 0.985239852398524
+Classification Report:
+               precision    recall  f1-score   support
+
+  non-target       1.00      0.97      0.98       135
+      target       0.97      1.00      0.99       136
+
+    accuracy                           0.99       271
+   macro avg       0.99      0.99      0.99       271
+weighted avg       0.99      0.99      0.99       271
+
+-----------------------------------------
+Classifier results
+subject: S2
+Accuracy: 0.9880952380952381
+Classification Report:
+               precision    recall  f1-score   support
+
+  non-target       1.00      0.98      0.99       211
+      target       0.98      1.00      0.99       209
+
+    accuracy                           0.99       420
+   macro avg       0.99      0.99      0.99       420
+weighted avg       0.99      0.99      0.99       420
+
+-----------------------------------------
+Classifier results
+subject: S3
+Accuracy: 0.9885714285714285
+Classification Report:
+               precision    recall  f1-score   support
+
+  non-target       0.98      0.99      0.99       167
+      target       0.99      0.98      0.99       183
+
+    accuracy                           0.99       350
+   macro avg       0.99      0.99      0.99       350
+weighted avg       0.99      0.99      0.99       350
+
+-----------------------------------------
+Classifier results
+subject: S4
+Accuracy: 0.9880952380952381
+Classification Report:
+               precision    recall  f1-score   support
+
+  non-target       0.99      0.99      0.99       204
+      target       0.99      0.99      0.99       216
+
+    accuracy                           0.99       420
+   macro avg       0.99      0.99      0.99       420
+weighted avg       0.99      0.99      0.99       420
+
+-----------------------------------------
+Classifier results
+subject: S5
+Accuracy: 0.9883720930232558
+Classification Report:
+               precision    recall  f1-score   support
+
+  non-target       1.00      0.98      0.99       187
+      target       0.98      1.00      0.99       157
+
+    accuracy                           0.99       344
+   macro avg       0.99      0.99      0.99       344
+weighted avg       0.99      0.99      0.99       344
+
+-----------------------------------------
+
